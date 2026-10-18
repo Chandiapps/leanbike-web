@@ -3,5 +3,6 @@
   "googlePlayUrl": "",
   "heroImage": "assets/portada-montana-v2.png",
   "appScreenshot": "assets/telefono-recortado-v2.png",
-  "requestEmail": "chandiapps@gmail.com"
+  "requestEmail": "chandiapps@gmail.com",
+  "packagesEnabled": false
 }
