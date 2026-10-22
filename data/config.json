@@ -1,8 +1,8 @@
 {
-  "mode": "closed",
-  "googlePlayUrl": "",
+  "mode": "released",
+  "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.chandiapps.leanbike",
   "heroImage": "assets/portada-montana-v2.png",
   "appScreenshot": "assets/telefono-recortado-v2.png",
   "requestEmail": "chandiapps@gmail.com",
-  "packagesEnabled": false
+  "packagesEnabled": true
 }
