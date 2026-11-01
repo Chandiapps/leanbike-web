@@ -1,0 +1,25 @@
+name: Desbloquear despliegue de LeanBike Pages
+
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/unblock-pages.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  cancel-stale-deployment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Cancelar solo el despliegue bloqueado identificado
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST \
+            -H 'Accept: application/vnd.github+json' \
+            -H 'X-GitHub-Api-Version: 2026-03-10' \
+            "repos/${GITHUB_REPOSITORY}/pages/deployments/83d121e615d1ddacf6a11a79cfed64259d7eb375/cancel"
