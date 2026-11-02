@@ -1,0 +1,9 @@
+#app .hero .hero-buttons .hero-explore-button{font-size:32px;line-height:1.05;gap:10px;padding:6px 14px;min-height:62px}
+#app .hero .hero-buttons .hero-explore-button>.hero-explore-bike{width:76px;height:51px;flex:0 0 76px;display:block}
+#app .hero .hero-buttons .hero-explore-label{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:800;font-size:inherit;line-height:1.05;letter-spacing:.02em;min-width:0;text-wrap:balance;white-space:normal;text-align:center}
+.hero .hero-intro-original[hidden]{display:none}
+.hero .hero-intro-lines{display:flex;flex-direction:column;gap:.6em;text-align:center;align-items:center}
+#motos #show-all{display:none}
+@media(max-width:1050px){#app .hero .hero-buttons .hero-explore-button{font-size:30px;gap:8px;padding:6px 10px;min-height:62px}#app .hero .hero-buttons .hero-explore-button>.hero-explore-bike{width:68px;height:46px;flex-basis:68px}}
+@media(max-width:550px){#app .hero .hero-buttons .hero-explore-button{font-size:28px;gap:6px;padding:6px 8px}#app .hero .hero-buttons .hero-explore-button>.hero-explore-bike{width:62px;height:43px;flex-basis:62px}html[lang=de] #app .hero .hero-buttons .hero-explore-button{font-size:17px;gap:4px}html[lang=de] #app .hero .hero-buttons .hero-explore-button>.hero-explore-bike{width:44px;flex-basis:44px}}
+@media(max-width:360px){#app .hero .hero-buttons .hero-explore-button{font-size:26px}#app .hero .hero-buttons .hero-explore-button>.hero-explore-bike{width:54px;flex-basis:54px}html[lang=de] #app .hero .hero-buttons .hero-explore-button{font-size:15px}html[lang=de] #app .hero .hero-buttons .hero-explore-button>.hero-explore-bike{width:38px;flex-basis:38px}}
