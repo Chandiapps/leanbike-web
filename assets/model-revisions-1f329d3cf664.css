@@ -1,0 +1,22 @@
+.public-revision-badge{position:absolute;right:10px;top:10px;color:#84b797;font:600 12px/1.2 Barlow,Arial,sans-serif;letter-spacing:.03em;text-shadow:0 1px 4px #000,0 0 8px #000b;pointer-events:none}
+#motos .revision-catalog-heading{font-size:clamp(27px,3.3vw,42px);line-height:1.12;text-transform:none;max-width:100%;margin-bottom:10px}
+#motos .revision-catalog-intro{max-width:660px;line-height:1.55}
+.model-revision-notes{max-width:620px;padding:10px 20px 12px;text-align:center}
+.model-revision-notes[hidden]{display:none}
+.model-revision-kicker{color:#8ec5a0;text-transform:uppercase;letter-spacing:.11em;font:600 10px Barlow,Arial,sans-serif;margin:0 0 9px}
+.model-revision-description{color:#e1ece5;font:400 15px/1.6 Barlow,Arial,sans-serif;margin:0}
+#bike-preview .model-revision-language{position:absolute;top:3px;right:65px;display:flex;align-items:center;gap:9px;color:#b7cbbf;font:12px Barlow,Arial,sans-serif;z-index:2}
+.model-revision-language select{min-height:40px;background:#0b1b12;color:#e9f2ec;border:1px solid #355844;border-radius:6px;padding:8px 11px;font:inherit}
+@media(max-width:550px){#motos .revision-catalog-heading{font-size:28px;line-height:1.12}#motos .revision-catalog-intro{font-size:13px}.model-revision-notes{padding:8px 16px}.model-revision-description{font-size:14px}#bike-preview .preview-surface img{max-height:52dvh}.model-revision-language>span{display:none}}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  #motos .revision-catalog-heading {
+    width: fit-content;
+    background: linear-gradient(90deg, var(--green) 0%, #f2f5f3 85%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+@media (forced-colors: active) {
+  #motos .revision-catalog-heading { color: CanvasText; }
+}
